@@ -390,3 +390,146 @@ footer .site-brand {
     color: white;
     opacity: 0.3;
 }
+
+/* ### Gallery Page ### */
+header .header-sm {
+    min-height: 60vh;
+}
+
+/* gallery */
+.gallery-item {
+    margin: 2rem 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--trans);
+    cursor: pointer;
+}
+.gallery-item::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 0% transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
+}
+.gallery-item img {
+    transition: var(--trans);
+}
+.gallery-item:hover img {
+    transform: scale(1.2);
+}
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    z-index: 2;
+    opacity: 0;
+    transition: var(--trans);
+}
+.gallery-item:hover .zoom-icon {
+    opacity: 1;
+}
+
+/* img modal box */
+#img-modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: none;
+}
+#img-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+}
+#img-modal img {
+    max-width: 100%;
+    height: 100%;
+}
+#img-modal-box button {
+    position: absolute;
+    font-size: 1.4rem;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: var(--trans);
+    border: none;
+}
+#img-modal-box button:hover {
+    opacity: 0.9;
+}
+#modal-close-btn {
+    top: -17.5px;
+    right: -17.5px;
+    z-index: 999;
+}
+#next-btn {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+#prev-btn {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#next-btn:hover, #prev-btn:hover {
+    background-color: var(--dark);
+    color: white;
+}
+
+/* popular section */
+#popular.py-4 {
+    padding-bottom: 0;
+}
+.popular-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--trans);
+}
+.popular-item::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 0% transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);   
+}
+.popular-item div {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    bottom: -100%;
+    width: 100%;
+    padding: 2rem;
+    transition: var(--trans);
+}
+.popular-item .rating {
+    font-size: 0.9rem;
+    justify-content: flex-start;
+    margin: 0.7rem 0;
+    opacity: 0.8;
+    padding: 0;
+}
+.popular-item:hover div {
+    background-color: white;
+    color: black;
+    bottom: 0;
+    opacity: 0.95;
+}
