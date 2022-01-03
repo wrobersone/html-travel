@@ -533,3 +533,50 @@ header .header-sm {
     bottom: 0;
     opacity: 0.95;
 }
+
+/* ### Blog Page ### */
+#blog {
+    background-color: var(--light-grey);
+}
+.blog-item {
+    background-color: white;
+    transition: var(--trans);
+}
+.blog-item-top {
+    position: relative;
+}
+.blog-date {
+    position: absolute;
+    background-color: var(--green);
+    color: white;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.blog-item-bottom {
+    padding: 2rem 1rem;
+}
+.blog-item-bottom span {
+    color: var(--dark);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem;
+    display: block;
+}
+.blog-item-bottom a {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    transition: var(--trans);
+}
+.blog-item-bottom a:hover {
+    opacity: 0.8;
+}
