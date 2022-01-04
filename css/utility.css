@@ -60,7 +60,8 @@ button, input[type = "submit"] {
 
 /* css animation and transition stops */
 .resize-animation-stopper *{
-    animation: none!important;
+    -webkit-animation: none!important;
+            animation: none!important;
     transition: none!important;
 }
 
