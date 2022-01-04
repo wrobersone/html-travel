@@ -580,3 +580,39 @@ header .header-sm {
 .blog-item-bottom a:hover {
     opacity: 0.8;
 }
+
+/* ### About Page ### */
+.about-right .text {
+    margin-bottom: 1rem;
+}
+.about-right h2 {
+    margin-bottom: 2.5rem;
+}
+
+/* facts */
+#facts {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/facts-img.jpg) center/cover no-repeat;
+    min-height: 80vh;
+}
+#facts .title-wrap {
+    color: white;
+}
+#facts .sm-title {
+    color: white;
+}
+.facts-item {
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+.facts-icon {
+    font-size: 3.2rem;
+}
+.facts-info strong {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.facts-info .text {
+    text-transform: uppercase;
+}
