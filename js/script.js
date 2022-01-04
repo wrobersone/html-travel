@@ -35,3 +35,24 @@ window.addEventListener('resize', () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+
+// light / dark mode toggle
+let darkMode = localStorage.getItem('darkmode');
+const modeToggleBtn = document.getElementById('theme-toggle-btn');
+
+if (darkMode != null) {
+    if (darkMode == "on") {
+        modeToggleBtn.checked = true;
+        document.querySelector('body').classList.add('dark-mode');
+    }
+}
+
+modeToggleBtn.addEventListener('click', () => {
+    if (modeToggleBtn.checked) {
+        document.querySelector('body').classList.add('dark-mode');
+        localStorage.setItem("darkmode", "on");
+    } else {
+        document.querySelector('body').classList.remove('dark-mode');
+        localStorage.setItem("darkmode", "off");
+    }
+});
