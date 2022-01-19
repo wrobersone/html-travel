@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPro</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Travel<span>Pro</span>
+            </a>
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="theme-toggle-btn">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id mollitia consectetur aperiam vero? Tenetur quas sunt doloribus temporibus, expedita, delectus quibusdam culpa, praesentium sequi nihil neque illo libero. Doloribus!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- contact section -->
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">get in touch with us</span>
+            </div>
+            <h2 class="lg-title">contact us</h2>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-left">
+                <form class="contact-form">
+                    <input type="text" class="form-control" placeholder="Your name">
+                    <input type="email" class="form-control" placeholder="Your email">
+                    <textarea class="form-control" rows="4" style="resize: none;">
+                    </textarea>
+                    <input type="submit" class="btn" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right my-2">
+                <div class="contact-item">
+                    <span class="contact-icon flex">
+                        <i class="fa fa-phone-alt"></i>
+                    </span>
+                    <div>
+                        <span>Phone</span>
+                        <p class="text">1-213-787-5285</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon flex">
+                        <i class="fa fa-map-marked-alt"></i>
+                    </span>
+                    <div>
+                        <span>Address</span>
+                        <p class="text">305 East 23rd Street, Manhattan, NY</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon flex">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <div>
+                        <span>Email</span>
+                        <p class="text">contact@abc.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">Travel<span>Pro</span></a>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eligendi nesciunt? Eligendi, ex. Sint impedit ex, quisquam ea repellat excepturi sit nostrum officia facilis? Labore necessitatibus mollitia rerum nihil hic.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow Us on:</h2>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#">Amsterdam</a></li>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Santorini</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
